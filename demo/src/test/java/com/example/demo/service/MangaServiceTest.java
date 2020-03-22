@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @SpringBootTest
-class MangaServiceTest {
+public class MangaServiceTest {
 
     @Autowired
     private MangaService mangaService;

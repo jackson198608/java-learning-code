@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 //generate from IDE
-class MangaTest {
+public class MangaTest {
     private final Manga manga = new Manga();
     @Test
     @Order(1)
