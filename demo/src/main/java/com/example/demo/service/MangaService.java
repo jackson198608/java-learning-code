@@ -11,14 +11,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.example.demo.models.Manga;
 import com.example.demo.models.MangaResult;
+
 @Service
 public class MangaService {
     Logger logger = LoggerFactory.getLogger(MangaService.class);
-    private static final String MANGA_SEARCH_URL="https://api.jikan.moe/v3/search/manga?q=";
+    private static final String MANGA_SEARCH_URL = "https://api.jikan.moe/v3/search/manga?q=";
     @Autowired
     RestTemplate restTemplate;
+
     public Manga[] getMangasByTitle(String title) {
-        return restTemplate.getForEntity(MANGA_SEARCH_URL+title, MangaResponse.class).getBody().getResults();
+        return restTemplate.getForEntity(MANGA_SEARCH_URL + title, MangaResponse.class).getBody().getResults();
     }
 
     @Bean

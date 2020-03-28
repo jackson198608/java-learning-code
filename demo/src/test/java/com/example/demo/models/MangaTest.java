@@ -8,17 +8,18 @@ import static org.junit.jupiter.api.Assertions.*;
 //generate from IDE
 public class MangaTest {
     private final Manga manga = new Manga();
+
     @Test
     @Order(1)
-    void setMal_id(){
-       manga.setMal_id(10);
+    void setMal_id() {
+        manga.setMal_id(10);
     }
 
     @Test
     @Order(2)
     void getMal_id() {
         manga.setMal_id(10);
-        assertEquals(manga.getMal_id(),10);
+        assertEquals(manga.getMal_id(), 10);
     }
 
     @Test

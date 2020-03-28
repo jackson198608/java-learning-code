@@ -32,6 +32,7 @@ public class MangaServiceTest {
     // If any existing single bean of the same type defined in the context will be replaced by the mock, if no existing bean is defined a new one will be added.
     @MockBean
     private RestTemplate template;
+
     @Test
     public void testGetMangasByTitle() throws IOException {
         // Parsing mock file
