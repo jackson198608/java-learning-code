@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "mybatis.project",
+      "type": "java.lang.String",
+      "description": "Description for mybatis.project."
+    },
+    {
+      "name": "mybatis.resources",
+      "type": "java.lang.String",
+      "description": "Description for mybatis.resources."
+    }
+  ] }
